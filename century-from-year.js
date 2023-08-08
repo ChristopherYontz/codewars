@@ -12,8 +12,4 @@
 
 
 // MY SOLUTION
-function century(year) {
-    if(y) {
-        return year[0] + 1;
-    }
-}
+const century = (year) => Math.ceil(year / 100);
