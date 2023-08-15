@@ -6,6 +6,7 @@
 // You can assume that all values are integers. Do not mutate the input array/list.
 
 // MY SOLUTION
-function invert(array) {
-    array.forEach)
-}
+const invert = array => array.forEach(num => num * -1);
+
+// OTHER SOLUTIONS
+const invert2 = array => array.map(num => -num);
