@@ -21,3 +21,10 @@ The middle character(s) of the word represented as a string.
 */
 
 // MY SOLUTION
+const getMiddle = s => {
+    const length = s.length
+    const middle = length / 2
+    return length % 2 === 0 ?
+        s.slice(middle - 1, middle + 1) :
+        s[Math.floor(middle)]
+}
