@@ -14,8 +14,21 @@ function addBinary (a, b) {
     let sum = a + b
     const biNums = []
     while (sum > 0) {
-            biNums.push((sum % 2).toString())
-            sum = Math.floor(sum / 2)
+        biNums.push((sum % 2).toString())
+         sum = Math.floor(sum / 2)
     }
-    return Number(biNums.join(''))
+    return biNums.join('')
 }
+
+function addBinary (a, b) {
+    let sum = a + b
+    const biNums = []
+    for (; sum > 0; sum = Math.floor(sum / 2)) {
+        biNums.push((sum % 2).toString())
+    }
+    return biNums.reverse().join('')
+}
+
+// OTHER SOLUTIONS
+const addBinary = (a, b) => (a + b).toString(2);
+    // toString(2) converts a number to binary
